@@ -1,0 +1,334 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    text-align: center;
+}
+body{
+    background-color: rgb(222, 216, 216);
+}
+img{
+    border-radius:40px;
+}
+#space .j{
+    transform: scale(1.2);
+    overflow: hidden;
+    justify-content: center; 
+}
+#space .error{
+    margin: auto;
+    width: 50%;
+    position: relative;
+    left:100%
+}
+#space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    height: 50px;
+    width: 315px;
+    border-radius: 50px;
+    border: none;
+    background-color: #C95252;
+    color: white;
+    font-weight: 800;
+}
+input:focus{
+    background-color: #C95252;
+}
+#search{
+    height: 45px;
+    position: relative;
+    right:45px;
+    top:18px;
+    border-radius: 50%;
+
+}
+nav{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+}
+#bio{
+    display: flex;
+    justify-content: space-between;
+}
+#nam{
+    word-break: break-all;
+}
+.images div{
+    margin-bottom: 100px;
+}
+#Ingredents{
+    font-size: x-large;
+    font-weight: 700;
+    margin: 30px;
+}
+#Ingredents div{
+    width: 100%;
+}
+
+#Ingredents img{
+    width: 100%;
+}
+.profile{
+    width: 50vw;
+    line-height: 50px;
+    margin: 30px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    width: 500px;
+    justify-content:space-around;
+    position: relative;
+    right: 10%;
+    background-color: white;
+}
+nav>img{
+    position: absolute;
+    left: 1%;
+    height: 50px;
+    margin: 1px;
+}
+h1{
+    margin-top: 40px;
+}
+#des{
+    width: 800px;
+    position: relative;
+    left: 20%;
+}
+.account{
+    position: relative;
+    left: 150px;
+}
+img{
+    margin-right: 5px;
+}
+.images{
+    height: 35vw;
+    /* background-color: rgb(0, 0, 0); */
+    position: relative;
+    margin:10px 10px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+#left{
+    position: absolute;
+    z-index: 2;
+    left: 1px;
+    height: 50px;
+    top:50%
+}
+#right{
+    position: absolute;
+    z-index:2;
+    right: 1px;
+    height: 50px;
+    top: 50%;
+}
+.slide{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+.randomimg{
+    height: 300px;
+    width: 50%;
+}
+.descrepsion{
+    color: black;
+}
+.iteam{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    height: 350px;
+    align-items: center;
+}
+#space{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    margin: 10px;
+    margin-left: 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+}
+
+.food{
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    height: 300px;
+    overflow: visible;
+    transition: transform .5s;
+}
+.food img{
+    transform: scale(0.9);
+    height: 90%;
+}
+
+.food:hover{
+    transform: scale(0.9);
+}
+#close{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+#close:hover{
+    color: rebeccapurple;
+}
+dialog{
+    background-color: black;
+    color: white;
+    border-radius: 43px;
+    border: none;
+    box-shadow: 10px 10px 20px black;
+    margin: auto;
+    width: 50%;
+}
+::backdrop {
+    background-color:rgba(217, 202, 202, 0.38); 
+    backdrop-filter: blur(5px);
+}
+#img{
+    width: 45%;
+    padding: 10px;
+    border-radius:50px;
+    height: 50vh;
+}
+.intro{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+li{
+    margin: 5px;
+    font-weight: 900;
+}
+.result{
+    margin: 50px;
+}
+.aa{
+    color: rgb(162, 116, 205);
+}
+#sort{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px ;
+    margin-bottom: 80px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+}
+.spacesort{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.alpha{
+    background-color: coral;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 2%;
+}
+@media only  screen and (max-width:600px){
+    #space{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: visible;
+        justify-content: center;
+        position: relative;
+        right: 5%;
+    }
+    #sort{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        font-size: small;
+        text-align: center;
+        padding-right: 2px;
+    }
+    .alpha{
+        width: 5%;
+    }
+    .descrepsion{
+        font-size: 20px;
+    }
+    .spacesort{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: visible;
+        justify-content: center;
+        position: relative;
+        right: 5%;
+        flex-wrap: wrap;
+    }
+    dialog{
+    height: 70vh;
+    width: 100%;
+    }
+    #img{
+        width: 90%;
+        height: fit-content;
+    }
+    .intro{
+        flex-direction: column;
+    }
+    #nam{
+        font-size: x-large;
+    }
+    dialog{
+        margin-left:19px;
+        margin-right: 19px;
+        width: 400px;
+    }
+    .slide{
+        bottom: 150px;
+    }
+    .randomimg{
+        height: 150px;
+        width: 400px;
+    }
+    #foodimg{
+        width: 90%;
+    }
+    .content{
+        right: 0px;
+        left: 70px;
+    }
+    #des{
+        margin-top: 30px;
+        width: 99%;
+        left:0%;
+    }
+    #space .error{
+        left:0;
+        right: 100%;
+    }
+    #Ingredents{
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+}
